@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccc;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* set contair size */
+ul li {
+  border: 0.4rem solid black;
+  background-color: white;
+  display: inline-block;
+  max-height: 500px;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+ul li:nth-child(3n) {
+  margin-right: 0;
+}
+
+/* set the img in the container to fill the container size that we have set up*/
+li img {
+  width: 100%;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
