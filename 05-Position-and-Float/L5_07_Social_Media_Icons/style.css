@@ -1,0 +1,90 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+li {
+  display: inline-block;
+  padding: 20px 0 20px 20px;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
+  border-radius: 50%;
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: relative;
+}
+
+li a::after {
+  font-family: FontAwesome;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+}
+
+.facebook::after {
+  content: '\f082';
+}
+
+.facebook:hover {
+  color: #087bea;
+}
+
+.twitter::after {
+  content: '\f099';
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.google-plus::after {
+  content: '\f2b3';
+}
+
+.google-plus:hover {
+  color: #d54d41;
+}
+
+.linkedin::after {
+  content: '\f08c';
+}
+
+.linkedin:hover {
+  color: #0a66c2;
+}
+
+.instagram::after {
+  content: '\f16d';
+}
+
+.instagram:hover {
+  color: #99127a;
+}
